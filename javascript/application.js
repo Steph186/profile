@@ -59,13 +59,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
   if (window.innerWidth >= 768) {
-    console.log("Hey, I am working");
     let tabs = document.querySelectorAll(".tab")
     if (tabs) {
-      console.log(tabs);
       tabs.forEach(function(tab) {
         tab.addEventListener('click', function() {
-          console.log("You clicked");
           removeSelected(tabs);
           tab.classList.add("selected");
         })
@@ -74,8 +71,26 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })
 
+document.addEventListener("DOMContentLoaded", function() {
+  let tabs = document.querySelectorAll(".tab")
+    // if (tabs) {
+    //   console.log("Checking...")
+    //   if (this.scrollY <= 10) {
+    //     console.log("I'm high")
+    //   removeSelected(tabs);
+    // }
+  }
+})
+
 function removeSelected(tabs) {
   tabs.forEach(function(tab) {
     tab.classList.remove("selected")
   })
 }
+
+
+// document.addEventListener('scroll', function() {
+//     if (window.location.pathname+window.location.hash == '/index.erb.html#contact') {
+//         console.log('Viewing contact form');
+//     }
+// });
