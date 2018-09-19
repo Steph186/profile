@@ -1,0 +1,40 @@
+.my-wrapper-gray {
+  background:rgba(80,80,80,0.3); /* For IE8 and earlier */
+  padding: 30px;
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+  .header h2 {
+    font-size: 40px;
+    border-bottom: 4px solid #6ad48a;
+    padding: 10px 20px;
+  }
+
+.my-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .my-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .my-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .my-container {
+    width: 1170px;
+  }
+}

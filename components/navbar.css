@@ -1,0 +1,198 @@
+/* NAVABAR*/
+#sc-logo {
+  margin: 0 15px;
+  a {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    color: rgb(147, 222, 239);
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+  img {
+    height: 30px;
+  }
+  p {
+    margin: 0px 5px !important;
+    font-size: 24px;
+  }
+}
+
+body ul li {
+  list-style-type: none;
+}
+
+.nav {
+  background-color: #4f4f4f;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  clear: both;
+  font-family: "Montserrat";
+}
+
+ul#menu {
+  display: none;
+  margin-bottom: 0px;
+}
+
+ul#menu li a {
+  width: 100%;
+  display: block;
+  background-color: #4f4f4f;
+  color: black;
+  font-size: 20px;
+  padding: 1em 1.2em;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+ul#menu a:hover {
+  background-color: #303030;
+}
+
+#navbar-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.hamburger li {
+  height: 3px;
+  background: #fff;
+  content: "";
+  position: relative;
+  transition: 0.25s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.rot45deg {
+  transform: rotate(45deg);
+  top: 10px !important;
+}
+
+.rot-45deg {
+  transform: rotate(-45deg);
+}
+
+ul.hamburger {
+  display: block;
+}
+ul.hamburger li:nth-child(1) {
+  top: 0;
+}
+ul.hamburger li:nth-child(2) {
+  top: 7px;
+}
+ul.hamburger li:nth-child(3) {
+  top: 14px;
+}
+
+.hamburger-container {
+  width: 38px;
+  margin: 1.2em 1.6em;
+  height: 30px;
+  cursor: pointer;
+  float: right;
+}
+
+.navbar-blue {
+  .nav {
+    background-color: #45608d;
+  }
+  ul#menu a:hover {
+    background-color: #45608d;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-navbar-container {
+    position: relative;
+  }
+
+  #sc-logo {
+    display: none;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  #navbar-element {
+
+  }
+
+  .nav {
+    width: 6%;
+    margin-left: 100px;
+    position: sticky;
+    top: 60px;
+  }
+
+  .arrow {
+    height: 8vh;
+    width: 6%;
+    margin-left: 100px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 30px;
+    }
+  }
+
+  .nav ul#menu {
+    display: inline;
+    width: 130px;
+/*    position: sticky;
+    top: 20px;*/
+  }
+
+  ul#menu li a.selected {
+    background-color: #6ad48a;
+  }
+/*  .hamburger-container {
+    display: none;
+  }
+
+
+  .nav ul#menu li {
+    display: inline-block;
+    margin-right: -5px;
+  }*/
+  /*// blue navbar on phone becomes transparent on big screens*/
+  /*.nav {
+    background-color: transparent;
+  }
+  ul#menu li a {
+    background-color: transparent;
+    border-bottom: 3px solid transparent;
+    font-size: 24px;
+    padding: 1em 1.2em;
+  }
+  ul#menu a:hover {
+    color: lightgray;
+    background-color: transparent;
+    border-bottom: 3px solid lightgray;
+  }*/
+}
+
+@media screen and (min-width: 900px) {
+
+/*  #sc-logo {
+    img {
+      height: 40px;
+    }
+  }
+
+  ul#menu li a {
+    font-size: 1.1em;
+    padding: 1em 1.4em;
+  }*/
+}
+/* END NAVABAR*/
