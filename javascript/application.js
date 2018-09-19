@@ -101,7 +101,7 @@ window.addEventListener("scroll", function() {
       })
     }
 
-  if (window.scrollY < 10) {
+  if (window.scrollY + anchors[0].offsetHeight < anchors[0].offsetTop) {
     removeSelected(tabs);
   }
 
