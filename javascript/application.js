@@ -16,6 +16,7 @@
 //   }
 // });
 
+
 document.addEventListener("DOMContentLoaded", function() {
   const navbar = document.querySelector('.nav');
   if (navbar) {
@@ -71,16 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })
 
-document.addEventListener("DOMContentLoaded", function() {
-  let tabs = document.querySelectorAll(".tab")
-    // if (tabs) {
-    //   console.log("Checking...")
-    //   if (this.scrollY <= 10) {
-    //     console.log("I'm high")
-    //   removeSelected(tabs);
-    // }
-  }
-})
+
 
 function removeSelected(tabs) {
   tabs.forEach(function(tab) {
@@ -88,9 +80,39 @@ function removeSelected(tabs) {
   })
 }
 
+// SCROLL changes URL and selected tab in green WITHOUT jumps on the page.
+document.addEventListener("DOMContentLoaded", function() {
+let anchors = document.querySelectorAll('section');
+let tabs = document.querySelectorAll(".tab")
+window.addEventListener("scroll", function() {
+  anchors.forEach(function(anchor){
+    if ((location.hash.substring(1) != anchor.classList.value) && (isScrolledIntoView(anchor) == true)) {
+      let href = anchor.classList.value;
+      location.hash = '/' + href.slice(href.indexOf('#') + 1);
+      tabs.forEach(function(tab) {
+        console.log(tab.hash.substring(1));
+        console.log(href);
+        if (tab.hash.substring(1) == href) {
+          console.log("true")
+          tab.classList.add("selected");
+        } else {
+          tab.classList.remove("selected");
+        }
+      })
+    }
 
-// document.addEventListener('scroll', function() {
-//     if (window.location.pathname+window.location.hash == '/index.erb.html#contact') {
-//         console.log('Viewing contact form');
-//     }
-// });
+  if (window.scrollY < 10) {
+    removeSelected(tabs);
+  }
+
+  })
+  });
+})
+
+function isScrolledIntoView(elem) {
+  // highest visible point
+  let topDoc = window.scrollY;
+  let topElem = elem.offsetTop;
+  let downElem = topElem + elem.offsetHeight;
+  return ((topElem <= topDoc) && (downElem - topDoc >= 5));
+}
