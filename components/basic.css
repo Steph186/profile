@@ -1,8 +1,21 @@
 .my-wrapper-gray {
   background:rgba(80,80,80,0.3); /* For IE8 and earlier */
   padding: 30px;
-  margin: 100px 0px;
+  margin-bottom: 100px;
+  margin-top: 80px;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+  .header h2 {
+    font-size: 40px;
+    border-bottom: 4px solid #6ad48a;
+    padding: 10px 20px;
+  }
 
 .my-container {
   padding-right: 15px;

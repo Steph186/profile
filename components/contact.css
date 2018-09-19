@@ -1,0 +1,12 @@
+.links-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-container ul a i {
+  font-size: 30px;
+  padding: 20px;
+  color: white;
+}

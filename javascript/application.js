@@ -90,10 +90,7 @@ window.addEventListener("scroll", function() {
       let href = anchor.classList.value;
       location.hash = '/' + href.slice(href.indexOf('#') + 1);
       tabs.forEach(function(tab) {
-        console.log(tab.hash.substring(1));
-        console.log(href);
         if (tab.hash.substring(1) == href) {
-          console.log("true")
           tab.classList.add("selected");
         } else {
           tab.classList.remove("selected");
