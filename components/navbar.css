@@ -134,7 +134,7 @@ ul.hamburger li:nth-child(3) {
 
   .arrow {
     height: 8vh;
-    width: 6%;
+    width: 130px;
     margin-left: 100px;
     background-color: gray;
     display: flex;
