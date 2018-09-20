@@ -1,6 +1,4 @@
 .my-wrapper {
-  padding-left: 50px;
-  padding-right: 50px;
   padding-bottom: 100px;
   padding-top: 80px;
 }
@@ -13,16 +11,20 @@
   background:rgba(106,212,138,0.1);
 }
 
-.my-wrapper-gray h3 {
+.my-wrapper h3 {
   margin-top: 20px;
 }
 
-.my-wrapper-gray h4 {
+.my-wrapper h4 {
   margin-top: 20px;
 }
 
-.my-wrapper-grayp {
+.my-wrapper {
   margin-top: 20px;
+}
+
+.margin-top {
+  margin-top: 100px;
 }
 
 .header {
