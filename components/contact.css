@@ -8,11 +8,15 @@
   font-size: 30px;
   color: white;
 }
-.contact-info p, a {
+.contact-info p {
+  color: white;
+}
+
+.contact-info a {
+  margin-top: 20px;
   color: white;
   text-decoration: none;
 }
-
 .contact-info a:hover {
   color: #6ad48a;
 }

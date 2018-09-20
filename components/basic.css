@@ -7,7 +7,11 @@
   background:rgba(238,238,230,1); /* For IE8 and earlier */
 }
 
-.green {
+.darkgray {
+  background:rgba(55,55,55,1);
+}
+
+.white {
   background:rgba(255,255,255,1);
 }
 
