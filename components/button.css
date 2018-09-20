@@ -6,7 +6,8 @@
   color: white;
   font-size: 20px;
   border: none;
-  margin: 0 auto;
+  display: block;
+  margin: auto;
 }
 
 .btn-primary:hover {

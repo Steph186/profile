@@ -4,11 +4,11 @@
 }
 
 .gray {
-  background:rgba(80,80,80,0.3); /* For IE8 and earlier */
+  background:rgba(238,238,230,1); /* For IE8 and earlier */
 }
 
 .green {
-  background:rgba(106,212,138,0.1);
+  background:rgba(255,255,255,1);
 }
 
 .my-wrapper h3 {
@@ -19,7 +19,7 @@
   margin-top: 20px;
 }
 
-.my-wrapper {
+.my-wrapper p {
   margin-top: 20px;
 }
 

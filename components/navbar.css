@@ -122,7 +122,8 @@ ul.hamburger li:nth-child(3) {
   }
 
   #navbar-element {
-
+    display: flex;
+    flex-direction: column;
   }
 
   .nav {
@@ -133,25 +134,34 @@ ul.hamburger li:nth-child(3) {
   }
 
   .arrow {
-    height: 8vh;
-    width: 130px;
-    margin-left: 100px;
+    height: 90px;
+    width: 150px;
+    margin-left: 130px;
     background-color: gray;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
 
-    i {
-      font-size: 30px;
-    }
+  .arrow i {
+    font-size: 30px;
   }
 
   .nav ul#menu {
     display: inline;
-    width: 130px;
+    /*width: 130px;*/
 /*    position: sticky;
     top: 20px;*/
   }
+
+  ul#menu li a {
+  color: white;
+  width: 150px;
+  font-size: 20px;
+  height: 70px;
+  /*padding: 25px 35px;*/
+}
 
   ul#menu li a.selected {
     background-color: #6ad48a;
