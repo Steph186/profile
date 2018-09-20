@@ -1,6 +1,7 @@
 @import 'components/navbar.css';
 @import 'components/basic.css';
 @import 'components/contact.css';
+@import 'components/button.css';
 /* GENERAL STYLING*/
 /*body {
   overflow-x: hidden;
