@@ -1,0 +1,21 @@
+.box-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .box-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+#img-skills {
+  padding-top: 80px;
+  padding-bottom: 200px;
+  width: 100%;
+  background-size: cover;
+  color: white;
+}
