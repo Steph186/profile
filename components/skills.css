@@ -2,6 +2,30 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: rgba(100,100,100,0.3);
+  padding: 30px 30px 30px 30px;
+}
+
+.skills-domain {
+  background-color: rgba(20,20,20,0.25);
+  padding: 10px;
+}
+
+.column-category {
+  width: 18%;
+}
+
+.column-category h3 {
+  margin-bottom: 20px;
+}
+
+.column-category ul > li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-category ul li div i {
+  font-size: 14px;
 }
 
 @media screen and (min-width: 768px) {
