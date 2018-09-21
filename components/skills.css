@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: rgba(100,100,100,0.3);
-  padding: 30px 30px 30px 30px;
+  padding: 0px 60px 30px 60px;
 }
 
 .skills-domain {
@@ -11,11 +11,8 @@
   padding: 10px;
 }
 
-.column-category {
-  width: 18%;
-}
-
 .column-category h3 {
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -32,7 +29,16 @@
   .box-skills {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0px 30px 30px 30px;
+  }
+
+  .column-category {
+    width: 18%;
+  }
+
+  .larger {
+    width: 25% !important;
   }
 }
 
