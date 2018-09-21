@@ -32,6 +32,23 @@ body ul li {
   font-family: "Montserrat";
 }
 
+.arrow {
+  height: 90px;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.arrow i {
+/*  position: absolute;
+  animation: MoveUpDown 1s linear infinite;
+  margin-bottom: 25px;*/
+}
+
 ul#menu {
   display: none;
   margin-bottom: 0px;
@@ -142,6 +159,22 @@ ul.hamburger li:nth-child(3) {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+  }
+
+  .arrow i {
+    position: absolute;
+    animation: MoveUpDown 1s linear infinite;
+    margin-bottom: 25px;
+  }
+
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 5px;
+    }
   }
 
   .arrow i {

@@ -1,6 +1,6 @@
 .card-website {
-  height: 230px;
-  width: 340px;
+  height: 210px;
+  width: 300px;
   background-size: cover;
   position: relative;
   margin: 0 20px;
@@ -25,8 +25,8 @@
 }
 
 .card-hover {
-  height: 230px;
-  width: 340px;
+  height: 210px;
+  width: 300px;
   transition: 0.6s ease;
   background-image: linear-gradient(-225deg, rgba(78,85,72,0.9) 0%, rgba(78,85,72,0.5) 50%);
   opacity: 0;
@@ -46,3 +46,13 @@
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .card-website {
+    height: 230px;
+    width: 340px;
+  }
+  .card-hover {
+  height: 230px;
+  width: 340px;
+  }
+}
