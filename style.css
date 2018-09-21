@@ -2,13 +2,14 @@
 @import 'components/basic.css';
 @import 'components/contact.css';
 @import 'components/button.css';
+@import 'components/portfolio.css';
 /* GENERAL STYLING*/
 /*body {
   overflow-x: hidden;
 }*/
 
 body {
-  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   color: black;
 }

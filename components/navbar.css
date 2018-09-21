@@ -150,9 +150,6 @@ ul.hamburger li:nth-child(3) {
 
   .nav ul#menu {
     display: inline;
-    /*width: 130px;*/
-/*    position: sticky;
-    top: 20px;*/
   }
 
   ul#menu li a {
@@ -160,7 +157,8 @@ ul.hamburger li:nth-child(3) {
   width: 150px;
   font-size: 20px;
   height: 70px;
-  /*padding: 25px 35px;*/
+  transition: background 0.3s;
+
 }
 
   ul#menu li a.selected {
