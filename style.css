@@ -36,16 +36,14 @@ body {
   position: relative;
 }
 
+.wrapper-about {
+  height: calc(100vh - 200px)
+}
+
 #title {
   position: absolute;
   top: -600px;
   left: 50vw;
-}
-
-.wrapper-nabvar {
-  height: 100vh;
-  display: flex;
-  align-items: flex-start;
 }
 
 @media screen and (min-width: 768px) {
