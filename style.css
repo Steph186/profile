@@ -33,10 +33,17 @@ body {
 }
 
 .wrapper-transparent {
+  flex: 1 1 auto;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.wrapper-nabvar {
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
 }
 
 @media screen and (min-width: 768px) {

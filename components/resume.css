@@ -17,34 +17,44 @@
 }
 
 .cv-info {
+  margin-left: 30px;
   padding: 0 20px 20px 20px;
   flex: 1 1 auto;
-  background-color: white;
+  /*background-color: white;*/
   position: relative;
 }
 
 .box-pointer {
-  font-size: 0px; line-height: 0%; width: 0px;
+/*  font-size: 0px; line-height: 0%; width: 0px;
   border-top: 20px solid rgba(238,238,230,1);
   border-right: 15px solid white;
   border-bottom: 20px solid rgba(238,238,230,1);
   position: absolute;
   top: 15px;
-  left: -15px;
+  left: -15px;*/
 }
 
-.date {
+.card-date {
+  height:100px;
+  width:100px;
+  background: url("../images/cercle-green-background.png");
+  background-size: cover;
+  z-index: 2;
   flex: 0 0 auto;
-  width: 150px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .timeline {
   position: absolute;
   top: -30px;
-  left: 215px;
+  left: 73px;
   height: 108%;
-  width: 8px;
-  background-color: gray;
+  border-left: 2px dotted #6ad48a;
+}
+
+
 }
 .timeline i {
   color: gray;
