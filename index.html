@@ -333,8 +333,9 @@
               <input class="name form-control" type="text" name="name" placeholder="Name">
               <input class="email form-control" type="email" name="_replyto" placeholder="your-email@gmail.com">
             </div>
-            <input class="subject form-control" type="email" name="_replyto" placeholder="Subject">
+            <textarea name="object" class="object form-control" placeholder="Object of the email"></textarea>
             <textarea name="message" class="message form-control" rows="5" placeholder="Any messages, comments, ideas, feedbacks? "></textarea>
+            <input type="hidden" name="_subject" value="New message from your website!"/>
             <input type="text" name="_gotcha" style="display:none">
             <input type="submit" value="Send" class="btn-primary">
           </form>
