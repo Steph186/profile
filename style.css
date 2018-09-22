@@ -1,10 +1,5 @@
-@import 'components/navbar.css';
-@import 'components/basic.css';
-@import 'components/contact.css';
-@import 'components/button.css';
-@import 'components/portfolio.css';
-@import 'components/skills.css';
-@import 'components/resume.css';
+@import 'components/index.css';
+@import 'pages/index.css';
 /* GENERAL STYLING*/
 /*body {
   overflow-x: hidden;
@@ -38,6 +33,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+#title {
+  position: absolute;
+  top: -600px;
+  left: 50vw;
 }
 
 .wrapper-nabvar {
