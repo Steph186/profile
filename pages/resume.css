@@ -1,7 +1,7 @@
 .cv-entry {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   margin-top: 30px;
 }
 
@@ -35,8 +35,8 @@
 }
 
 .card-date {
-  height:100px;
-  width:100px;
+  height:70px;
+  width:70px;
   background: url("../images/cercle-green-background.png");
   background-size: cover;
   z-index: 2;
@@ -52,6 +52,7 @@
   left: 73px;
   height: 108%;
   border-left: 2px dotted #6ad48a;
+  display: none;
 }
 
 
@@ -66,4 +67,22 @@
 
 .position-relative {
   position: relative;
+}
+
+@media (min-width: 985px) {
+  .cv-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+
+  .timeline {
+    display: block;
+  }
+
+  .card-date {
+    height:100px;
+    width:100px;
+  }
 }

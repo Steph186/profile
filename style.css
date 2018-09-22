@@ -36,10 +36,6 @@ body {
   position: relative;
 }
 
-.wrapper-about {
-  height: calc(100vh - 200px)
-}
-
 #title {
   position: absolute;
   top: -600px;
