@@ -85,9 +85,11 @@
     width: 750px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 945px) {
   .my-container {
-    width: 970px;
+    width: 760px;
+    /*width: 926px;*/
+    /*padding-left: 157px;*/
   }
 }
 @media (min-width: 1200px) {
