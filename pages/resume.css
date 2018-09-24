@@ -6,14 +6,14 @@
 }
 
 .cv-entry i {
-  margin: 20px 40px;
-  justify-content: flex-start;
+  /*margin: 20px 40px;*/
+  /*justify-content: flex-start;*/
   /*color: #6ad48a;*/
-  color: gray;
-  background-color: rgba(238,238,230,1);
-  z-index: 9;
-  padding: 5px;
-  border-radius: 50px;
+  /*color: gray;*/
+  /*background-color: rgba(238,238,230,1);*/
+  /*z-index: 9;*/
+  /*padding: 5px;*/
+  /*border-radius: 50px;*/
 }
 
 .cv-info {
@@ -22,6 +22,16 @@
   flex: 1 1 auto;
   /*background-color: white;*/
   position: relative;
+}
+
+.cv-subsection {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.cv-subsection i {
+  margin: 22px;
 }
 
 .box-pointer {
