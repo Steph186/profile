@@ -160,6 +160,7 @@ ul.hamburger li:nth-child(3) {
     position: absolute;
     animation: MoveUpDown 1s linear infinite;
     margin-bottom: 25px;
+    font-size: 30px;
   }
 
   @keyframes MoveUpDown {
@@ -169,10 +170,6 @@ ul.hamburger li:nth-child(3) {
     50% {
       bottom: 5px;
     }
-  }
-
-  .arrow i {
-    font-size: 30px;
   }
 
   .nav ul#menu {
@@ -199,7 +196,7 @@ ul.hamburger li:nth-child(3) {
   }
 
   .arrow {
-    margin-left: 90px;
+    margin-left: 150px;
   }
 
   .arrow i {
