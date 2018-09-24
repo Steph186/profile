@@ -1,22 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//   let navbar = document.querySelector('.nav');
-//   if (navbar) {
-//     navbar.style.transition = "all 0.3s";
-//     if (window.innerWidth >= 50) {
-//       window.addEventListener('scroll', () => {
-//         if (window.scrollY >= 50) {
-//           navbar.style.backgroundColor = '#45608d';
-//         } else {
-//           navbar.style.backgroundColor = 'transparent';
-//         }
-
-//       })
-
-//     }
-//   }
-// });
-
-
 document.addEventListener("DOMContentLoaded", function() {
   const navbar = document.querySelector('.nav');
   if (navbar) {
@@ -30,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let middleBar = document.querySelector(".hamburger li:nth-child(2)");
     let bottomBar = document.querySelector(".hamburger li:nth-child(3)");
 
+    // hamburger is displayed only on phones.
+    // when clicked, change it to cross
     hamburgerMenu.addEventListener('click', function() {
       if (middleBar.classList.contains("rot-45deg") === true) {
         topBar.classList.remove("rot45deg");
@@ -41,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         middleBar.classList.add("rot-45deg");
       }
 
+      // and display/hide menu on click
       if (menu.style.display === "block") {
         menu.style.display = "none";
         flexbox.style.display = "flex";
@@ -59,9 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 document.addEventListener("DOMContentLoaded", function() {
+  // on desktop, at least 768 wide
   if (window.innerWidth >= 768) {
     let tabs = document.querySelectorAll(".tab")
     if (tabs) {
+      // change color of tabs in green when clicked
       tabs.forEach(function(tab) {
         tab.addEventListener('click', function() {
           removeSelected(tabs);
@@ -72,8 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })
 
-
-
+// takes all tabs and remove all selected attributes.
 function removeSelected(tabs) {
   tabs.forEach(function(tab) {
     tab.classList.remove("selected")
@@ -83,12 +68,17 @@ function removeSelected(tabs) {
 // SCROLL changes URL and selected tab in green WITHOUT jumps on the page.
 document.addEventListener("DOMContentLoaded", function() {
 let anchors = document.querySelectorAll('section');
-let tabs = document.querySelectorAll(".tab")
+let tabs = document.querySelectorAll(".tab");
+let body = document.querySelector("body");
+// on scroll,
 window.addEventListener("scroll", function() {
   anchors.forEach(function(anchor){
+    // check if new anchor become visible in the screen (does not listen the current anchor)
     if ((location.hash.substring(1) != anchor.classList.value) && (isScrolledIntoView(anchor) == true)) {
+      // change url without mofying scroll of page
       let href = anchor.classList.value;
       location.hash = '/' + href.slice(href.indexOf('#') + 1);
+      // and change color of current tab on navbar
       tabs.forEach(function(tab) {
         if (tab.hash.substring(1) == href) {
           tab.classList.add("selected");
@@ -98,14 +88,15 @@ window.addEventListener("scroll", function() {
       })
     }
 
-  if (window.scrollY + anchors[0].offsetHeight < anchors[0].offsetTop) {
-    removeSelected(tabs);
-  }
-
-  })
+    if (window.scrollY + window.innerHeight > body.scrollHeight - 100) {
+      removeSelected(tabs);
+      tabs[4].classList.add("selected")
+     }
+    })
   });
 })
 
+// is the element currently visible in the screen?
 function isScrolledIntoView(elem) {
   // highest visible point
   let topDoc = window.scrollY;
