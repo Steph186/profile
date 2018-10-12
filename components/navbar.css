@@ -38,6 +38,11 @@ body ul li {
   width: 100%;
 }
 
+.navbar-placeholder {
+  height: 350px;
+  display: none;
+}
+
 .arrow {
   height: 90px;
   width: 100%;

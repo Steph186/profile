@@ -118,16 +118,20 @@ document.addEventListener("DOMContentLoaded", function() {
   // Get the offset position of the navbar
   var sticky = navbar.offsetTop;
 
+  let placeholder = document.querySelector(".navbar-placeholder")
+
   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function needSticky() {
     // on large devices, navbar should stick 60px under top.
     if (window.innerWidth >= 750 && window.pageYOffset >= sticky - 60) {
       navbar.classList.add("sticky");
+      placeholder.style.display = "block";
     // on smaller devices, navbar should be sticky on top
     } else if (window.innerWidth < 750 && window.pageYOffset >= sticky + 0) {
       navbar.classList.add("sticky");
     } else {
       navbar.classList.remove("sticky");
+      placeholder.style.display = "none";
     }
   }
 })
