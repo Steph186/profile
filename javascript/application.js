@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let middleBar = document.querySelector(".hamburger li:nth-child(2)");
     let bottomBar = document.querySelector(".hamburger li:nth-child(3)");
 
+    let tabs = document.querySelectorAll(".tab");
+
     // hamburger is displayed only on phones.
     // when clicked, change it to cross
     hamburgerMenu.addEventListener('click', function() {
@@ -39,6 +41,8 @@ document.addEventListener("DOMContentLoaded", function() {
         logo.style.display = "none";
       }
     });
+
+    // on phones, when click on a tab -> close the navbar.
   }
 })
 
@@ -104,3 +108,26 @@ function isScrolledIntoView(elem) {
   let downElem = topElem + elem.offsetHeight;
   return ((topElem <= topDoc) && (downElem - topDoc >= 5));
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {needSticky()};
+
+  // Get the navbar
+  var navbar = document.querySelector(".nav");
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function needSticky() {
+    // on large devices, navbar should stick 60px under top.
+    if (window.innerWidth >= 750 && window.pageYOffset >= sticky - 60) {
+      navbar.classList.add("sticky");
+    // on smaller devices, navbar should be sticky on top
+    } else if (window.innerWidth < 750 && window.pageYOffset >= sticky + 0) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+})
