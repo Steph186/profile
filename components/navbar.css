@@ -130,7 +130,7 @@ ul.hamburger li:nth-child(3) {
   }
 }
 
-@media (min-width: 855px) {
+@media (min-width: 985px) {
   .banner-navbar-container {
     position: relative;
   }
@@ -201,28 +201,22 @@ ul.hamburger li:nth-child(3) {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1350px) {
+  .nav {
+    margin-left: 70px;
+  }
+
+  .arrow {
+    margin-left: 70px;
+  }
+}
+
+@media (min-width: 1900px) {
   .nav {
     margin-left: 150px;
-    flex-shrink: 0;
   }
 
   .arrow {
     margin-left: 150px;
-  }
-
-  .arrow i {
-    position: absolute;
-    animation: MoveUpDown 1s linear infinite;
-    margin-bottom: 25px;
-  }
-
-  @keyframes MoveUpDown {
-    0%, 100% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 5px;
-    }
   }
 }

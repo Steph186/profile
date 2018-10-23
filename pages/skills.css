@@ -25,12 +25,26 @@
   font-size: 14px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .box-skills {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0px 30px 30px 30px;
+  }
+
+  .one-skill {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .skills {
+    flex: 1 1 auto;
+  }
+
+  .stars {
+    flex: 0 0 40px;
   }
 
   .column-category {
@@ -38,7 +52,7 @@
   }
 
   .larger {
-    width: 25% !important;
+    width: 28% !important;
   }
 }
 
@@ -48,4 +62,16 @@
   width: 100%;
   background-size: cover;
   color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .one-skill {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .stars {
+    flex: 0 0 80px;
+  }
+
 }

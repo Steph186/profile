@@ -79,22 +79,20 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  /*margin-top: 100px;*/
 }
 @media (min-width: 768px) {
   .my-container {
-    width: 750px;
+    width: 600px;
   }
 }
-@media (min-width: 850px) {
+@media (min-width: 1120px) {
   .my-container {
-    width: 730px;
-    /*width: 926px;*/
-    /*padding-left: 157px;*/
+    width: 800px;
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 1600px) {
   .my-container {
-    width: 1170px;
+    width: 1070px;
   }
 }
