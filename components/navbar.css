@@ -25,7 +25,7 @@ body ul li {
 .nav {
   background-color: #4f4f4f;
   width: 100%;
-  /*position: sticky;*/
+s
   top: 0px;
   z-index: 10;
   /*clear: both;*/
@@ -151,7 +151,6 @@ ul.hamburger li:nth-child(3) {
   .nav {
     width: 150px;
     margin-left: 0px;
-    /*position: sticky;*/
     top: 60px;
   }
 

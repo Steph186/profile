@@ -51,16 +51,20 @@
 }
 
 @media screen and (min-width: 768px) {
+
+}
+
+
+@media (min-width: 985px) {
   .card-website {
     height: 330px;
     width: 450px;
     margin-top: 40px;
   }
   .card-hover {
-  height: 330px;
-  width: 450px;
+    height: 330px;
+    width: 450px;
   }
-
   .card-hover p {
     margin-top: 50px;
   }
