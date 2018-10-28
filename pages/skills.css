@@ -11,6 +11,10 @@
   padding: 10px;
 }
 
+.stars i{
+  color: #6ad48a;
+}
+
 .column-category h3 {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -48,7 +52,7 @@
   }
 
   .column-category {
-    width: 18%;
+    width: 20%;
   }
 
   .larger {
@@ -64,7 +68,7 @@
   color: white;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .one-skill {
     display: flex;
     flex-direction: row;
