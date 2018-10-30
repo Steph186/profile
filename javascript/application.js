@@ -135,3 +135,36 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  if (window.innerWidth >= 750) {
+    let master = document.querySelector("#showMaster");
+    let conferences = document.querySelector("#showConf");
+    let prize = document.querySelector("#showPrize");
+
+    let infoMaster = document.querySelector("#infoMaster");
+    let infoConferences = document.querySelector("#infoConf");
+    let infoPrize = document.querySelector("#infoPrize");
+
+    master.addEventListener('click', function() {
+      toggleElement(infoMaster);
+    })
+
+    conferences.addEventListener('click', function() {
+      toggleElement(infoConferences);
+    })
+
+    prize.addEventListener('click', function() {
+      toggleElement(infoPrize);
+    })
+
+    function toggleElement(element) {
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+  }
+})
