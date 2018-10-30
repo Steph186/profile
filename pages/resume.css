@@ -32,6 +32,7 @@
 
 .cv-subsection i {
   margin: 22px;
+  cursor: pointer;
 }
 
 .box-pointer {
@@ -45,8 +46,8 @@
 }
 
 .card-date {
-  height:70px;
-  width:70px;
+  height:100px;
+  width:100px;
   background: url("../images/cercle-green-background.png");
   background-size: cover;
   z-index: 2;
@@ -89,10 +90,5 @@
 
   .timeline {
     display: block;
-  }
-
-  .card-date {
-    height:100px;
-    width:100px;
   }
 }

@@ -137,12 +137,11 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 document.addEventListener("DOMContentLoaded", function() {
+  let master = document.querySelector("#showMaster");
+  let conferences = document.querySelector("#showConf");
+  let prize = document.querySelector("#showPrize");
 
   if (window.innerWidth >= 750) {
-    let master = document.querySelector("#showMaster");
-    let conferences = document.querySelector("#showConf");
-    let prize = document.querySelector("#showPrize");
-
     let infoMaster = document.querySelector("#infoMaster");
     let infoConferences = document.querySelector("#infoConf");
     let infoPrize = document.querySelector("#infoPrize");
@@ -166,5 +165,9 @@ document.addEventListener("DOMContentLoaded", function() {
         element.style.display = "none";
       }
     }
+  } else {
+    // master.style.display = "none";
+    // conferences.style.display = "none";
+    // prize.style.display = "none";
   }
 })

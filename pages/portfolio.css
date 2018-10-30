@@ -1,5 +1,12 @@
 .card-link {
   margin: 20px;
+  padding-top: 135px;
+}
+
+.card-hover {
+  position: absolute;
+  top: -115px;
+  color: #4f4f4f;
 }
 
 .card-website {
@@ -28,44 +35,46 @@
   height: 23px;
 }
 
-.card-hover {
-  height: 210px;
-  width: 300px;
-  transition: 0.6s ease;
-  background-image: linear-gradient(-225deg, rgba(106,212,138,0.9) 0%, rgba(106,212,138,0.7) 50%);
-  opacity: 0;
-  padding: 60px;
-  color: white;
-}
-
-.card-hover hr {
-  margin: 10px 0 25px 0;
-}
-
-.card-website:hover .card-hover {
-  opacity: 1;
-}
-
 .card-link {
   text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
-
+  .card-website {
+    height: 310px;
+    width: 460px;
+  }
 }
 
-
 @media (min-width: 985px) {
+  .card-link {
+    padding-top: 0px;
+  }
+
   .card-website {
     height: 330px;
     width: 450px;
     margin-top: 40px;
   }
   .card-hover {
+    top: 0px;
     height: 330px;
     width: 450px;
+    transition: 0.6s ease;
+    background-image: linear-gradient(-225deg, rgba(106,212,138,0.9) 0%, rgba(106,212,138,0.7) 50%);
+    opacity: 0;
+    padding: 60px;
+    color: white;
   }
   .card-hover p {
     margin-top: 50px;
+  }
+
+  .card-hover hr {
+    margin: 10px 0 25px 0;
+  }
+
+  .card-website:hover .card-hover {
+    opacity: 1;
   }
 }
