@@ -147,22 +147,27 @@ document.addEventListener("DOMContentLoaded", function() {
     let infoPrize = document.querySelector("#infoPrize");
 
     master.addEventListener('click', function() {
-      toggleElement(infoMaster);
+      toggleElement(infoMaster, master);
     })
 
     conferences.addEventListener('click', function() {
-      toggleElement(infoConferences);
+      toggleElement(infoConferences, conferences);
     })
 
     prize.addEventListener('click', function() {
-      toggleElement(infoPrize);
+      toggleElement(infoPrize, prize);
     })
 
-    function toggleElement(element) {
+    function toggleElement(element, icon) {
       if (element.style.display === "none") {
         element.style.display = "block";
+        icon.classList.remove("fa-chevron-circle-down");
+        icon.classList.add("fa-chevron-circle-up");
       } else {
         element.style.display = "none";
+        icon.classList.remove("fa-chevron-circle-up");
+        icon.classList.add("fa-chevron-circle-down");
+        console.log(icon);
       }
     }
   } else {
