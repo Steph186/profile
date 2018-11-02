@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let infoPrize = document.querySelector("#infoPrize");
     let infoCoursera = document.querySelector("#infoCoursera");
 
-    infoCoursera.style.display = "none";
+    // infoCoursera.style.display = "none";
 
     [master, conferences, prize, coursera].forEach(function(show) {
       console.log("show is");
@@ -158,25 +158,6 @@ document.addEventListener("DOMContentLoaded", function() {
         toggleElement([infoMaster, infoConferences, infoPrize, infoCoursera][index], show);
       })
     })
-
-
-
-    // master.addEventListener('click', function() {
-    //   toggleElement(infoMaster, master);
-    // })
-
-    // conferences.addEventListener('click', function() {
-    //   toggleElement(infoConferences, conferences);
-    // })
-
-    // prize.addEventListener('click', function() {
-    //   toggleElement(infoPrize, prize);
-    // })
-
-    // coursera.addEventListener('click', function() {
-    //   toggleElement(infoCoursera, coursera);
-    // })
-
 
     function toggleElement(element, icon) {
       console.log(element);
