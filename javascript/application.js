@@ -140,25 +140,46 @@ document.addEventListener("DOMContentLoaded", function() {
   let master = document.querySelector("#showMaster");
   let conferences = document.querySelector("#showConf");
   let prize = document.querySelector("#showPrize");
+  let coursera = document.querySelector("#showCoursera");
 
   if (window.innerWidth >= 750) {
     let infoMaster = document.querySelector("#infoMaster");
     let infoConferences = document.querySelector("#infoConf");
     let infoPrize = document.querySelector("#infoPrize");
+    let infoCoursera = document.querySelector("#infoCoursera");
 
-    master.addEventListener('click', function() {
-      toggleElement(infoMaster, master);
+    infoCoursera.style.display = "none";
+
+    [master, conferences, prize, coursera].forEach(function(show) {
+      console.log("show is");
+      console.log(show);
+      show.addEventListener('click', function() {
+        index = [master, conferences, prize, coursera].indexOf(show);
+        toggleElement([infoMaster, infoConferences, infoPrize, infoCoursera][index], show);
+      })
     })
 
-    conferences.addEventListener('click', function() {
-      toggleElement(infoConferences, conferences);
-    })
 
-    prize.addEventListener('click', function() {
-      toggleElement(infoPrize, prize);
-    })
+
+    // master.addEventListener('click', function() {
+    //   toggleElement(infoMaster, master);
+    // })
+
+    // conferences.addEventListener('click', function() {
+    //   toggleElement(infoConferences, conferences);
+    // })
+
+    // prize.addEventListener('click', function() {
+    //   toggleElement(infoPrize, prize);
+    // })
+
+    // coursera.addEventListener('click', function() {
+    //   toggleElement(infoCoursera, coursera);
+    // })
+
 
     function toggleElement(element, icon) {
+      console.log(element);
       if (element.style.display === "none") {
         element.style.display = "block";
         icon.classList.remove("fa-chevron-circle-down");
