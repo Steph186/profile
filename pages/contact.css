@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-right: 50px;
+  margin-bottom: 50px;
   list-style-type: none;
   padding-top: 25px;
 }
@@ -36,7 +37,9 @@
 
 /* FORM CLASSES*/
 .contact-form {
-  flex: 1 0 auto;
+  margin: 0px;
+  width: 100%;
+  flex: 1 1 auto;
 }
 
 .form-control {
@@ -66,13 +69,27 @@
 }
 
 .name {
-  margin-right: 7px;
+  margin-right: 0px;
 }
 
 .email {
-  margin-left: 7px;
+  margin-left: 0px;
 }
 
 .message {
   height: 150px !important;
+}
+
+@media (min-width: 1200px) {
+  .name {
+    margin-right: 7px;
+  }
+
+  .email {
+    margin-left: 7px;
+  }
+
+  .contact-info {
+    margin-bottom: 140px;
+  }
 }
