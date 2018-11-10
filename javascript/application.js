@@ -13,8 +13,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let tabs = document.querySelectorAll(".tab");
 
+    menu.addEventListener('click', function() {
+      console.log(menu);
+       // CREATE METHOD HERE --> to avoid repetition of codes
+        menu.style.display = "none";
+        flexbox.style.display = "flex";
+        flexbox.style.justifyContent = "space-between";
+        flexbox.style.alignItems = "center";
+        logo.style.display = "block";
+
+        topBar.classList.remove("rot45deg");
+        middleBar.classList.remove("rot-45deg");
+        bottomBar.classList.remove("hidden");
+    })
+
     // hamburger is displayed only on phones.
     // when clicked, change it to cross
+
+    // CREATE METHOD HERE --> to avoid repetition of code
+
     hamburgerMenu.addEventListener('click', function() {
       if (middleBar.classList.contains("rot-45deg") === true) {
         topBar.classList.remove("rot45deg");
